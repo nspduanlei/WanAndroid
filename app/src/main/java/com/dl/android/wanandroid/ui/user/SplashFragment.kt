@@ -18,18 +18,15 @@ import com.dl.android.wanandroid.utils.PreferencesUtil
  */
 
 class SplashFragment : Fragment() {
-
     lateinit var mBinding: FragmentSplashBinding
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_splash, container,
             false)
         mBinding.title = "SplashFragment"
-
         return mBinding.root
     }
 
